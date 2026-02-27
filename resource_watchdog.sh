@@ -1,7 +1,7 @@
 #!/bin/sh
 
-CPU_LIMIT=95
-RAM_LIMIT=95
+CPU_LIMIT=88
+RAM_LIMIT=88
 MAIN_SERVICE="paqet.service"
 LOG_FILE="/var/log/resource_watchdog.log"
 
