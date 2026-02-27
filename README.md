@@ -12,7 +12,7 @@ rm -f /usr/local/bin/resource_watchdog.sh
 rm -f /var/log/resource_watchdog.log
 ```
 
-## 📄 توضیح پیشنهادی
+## 📄 توضیح
 
  اسکریپت **Resource Watchdog** سبک برای سرورهای لینوکس است که به صورت خودکار مصرف **CPU** و **RAM** را مانیتور می‌کند و در صورت رسیدن مصرف به حد بالا، سرویس‌های اصلی تانل‌های **Backhaul، Hotfix و Packet** را ری‌استارت می‌کند.
 
