@@ -19,9 +19,11 @@ if [ "$CPU_USAGE" -ge "$CPU_LIMIT" ] || [ "$RAM_USAGE" -ge "$RAM_LIMIT" ]; then
     [ "$CPU_USAGE" -ge "$CPU_LIMIT" ] && REASON="CPU=${CPU_USAGE}%"
     [ "$RAM_USAGE" -ge "$RAM_LIMIT" ] && REASON="${REASON} RAM=${RAM_USAGE}%"
 
+    systemctl is-enabled "$MAIN_SERVICE" >/dev/null 2>&1 && \
     systemctl restart "$MAIN_SERVICE"
-
+    
     systemctl list-unit-files | awk '/^backhaul-/ {print $1}' | while read svc; do
+        systemctl is-enabled "$svc" >/dev/null 2>&1 && \
         systemctl restart "$svc"
     done
 
