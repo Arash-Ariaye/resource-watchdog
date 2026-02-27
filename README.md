@@ -1,2 +1,4 @@
-# resource-watchdog
-Automatically restarts services if CPU or RAM usage exceeds 95%.
+## ✅ دستور نصب تک‌خطی (برای کاربر نهایی)
+
+```bash
+curl -fsSL -4 https://raw.githubusercontent.com/Arash-Ariaye/resource-watchdog/main/install.sh | sudo sh
