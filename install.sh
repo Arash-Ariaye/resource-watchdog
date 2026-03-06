@@ -4,7 +4,7 @@
 GITHUB_RAW="https://raw.githubusercontent.com/Arash-Ariaye/resource-watchdog/main/resource_watchdog.sh"
 INSTALL_PATH="/usr/local/bin/resource_watchdog.sh"
 LOG_FILE="/var/log/resource_watchdog.log"
-CRON_JOB="*/5 * * * * $INSTALL_PATH"
+CRON_JOB="* * * * * $INSTALL_PATH"
 
 echo "🔧 Installing Resource Watchdog..."
 
